@@ -33,6 +33,7 @@
             _module.args = { inherit inputs; };
             home-manager = {
               users.zavan = import ./home.nix;
+              backupFileExtension = "hm-backup";
             };
             users.users.zavan.home = "/Users/zavan";
           }
@@ -49,6 +50,7 @@
             _module.args = { inherit inputs; };
             home-manager = {
               users.zavan = import ./home.nix;
+              backupFileExtension = "hm-backup";
             };
             users.users.zavan.home = "/Users/zavan";
           }
