@@ -1,0 +1,34 @@
+[user]
+	name = Felipe Zavan
+	email = felipe@zavan.me
+  signingkey = 715CFE4842550CC6
+[core]
+  excludesfile = "~/.gitignore"
+	editor = nano
+	ignorecase = false
+[init]
+	defaultBranch = master
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	tree = log --oneline --decorate --all --graph
+[pull]
+	ff = only
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2
+[rerere]
+	enabled = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[maintenance]
+	repo = /Users/zavan/spillover/engage/src/front_end_v6
+	repo = /Users/zavan/spillover/engage/src/api
+	repo = /Users/zavan/spillover/engage/src/store
+	repo = /Users/zavan/spillover/engage
