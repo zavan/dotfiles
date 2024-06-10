@@ -12,8 +12,8 @@
     ];
 
     file = {
-      ".gitignore".source = ../files/.gitignore;
-      ".gitconfig".source = ../files/.gitconfig;
+      ".gitignore".source = ./files/.gitignore;
+      ".gitconfig".source = ./files/.gitconfig;
     };
 
     sessionVariables = {
